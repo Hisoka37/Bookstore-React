@@ -1,21 +1,23 @@
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import BookItem from './BookItem';
 
-const BookList = ({ title, author }) => (
-  <div>
-    <h1> Books List </h1>
-    <ul>
-      <li>
-        {title}
-        {' '}
-        by
-        {' '}
-        {author}
-      </li>
-    </ul>
-  </div>
-);
-BookList.propTypes = {
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+const BookList = () => {
+  const { books } = useSelector((store) => store.book);
+  return (
+    <>
+      <section className="bookscontainer">
+        {books.map((book) => (
+          <BookItem
+            key={book.id}
+            id={book.id}
+            title={book.title}
+            author={book.author}
+            category={book.category}
+          />
+        ))}
+      </section>
+    </>
+  );
 };
+
 export default BookList;
