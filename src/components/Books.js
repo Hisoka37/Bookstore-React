@@ -3,7 +3,7 @@ import Form from './Form';
 
 const Books = () => (
   <>
-    <BookList title="Harry Potter" author="Rowling" />
+    <BookList />
     <Form />
   </>
 );
