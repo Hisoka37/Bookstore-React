@@ -27,8 +27,6 @@ const Form = () => {
 
   return (
     <div className="addbooks">
-      <h2>ADD NEW BOOK</h2>
-
       <form onSubmit={handleSubmit}>
         <input
           type="text"
