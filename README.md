@@ -24,7 +24,7 @@
 # 📖 Book Store <a name="about-project"></a>
 
 
-**Book Store** is a react books app
+**Book Store**  web application built using React.js, HTML5 and CSS3. It allows users to add and store books in a database using an API. 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
